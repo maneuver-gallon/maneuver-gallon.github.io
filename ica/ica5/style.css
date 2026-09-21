@@ -7,7 +7,7 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #dde;
+  background-color: rgb(108, 122, 113);
 }
 
 body {
@@ -20,12 +20,12 @@ body {
 
 font[size="7"], font[size="6"], font[size="5"] {
   font-family: 'Sonsie One', cursive;
-  color: #2a2a2a;
+  color: #000000;
 }
 
 p, input, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
-  color: #2a2a2a;
+  color: #000000;
 }
 
 font[size="7"] {
@@ -52,7 +52,7 @@ p, li, table {
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
-  background-color: green;
+  background-color: #81b776;
 }
 
 article, footer, .secondary {
@@ -112,7 +112,7 @@ div[class="nav"] .search {
 .search input[type="submit"] {
   flex: 1;
   margin-left: 1rem;
-  background: #333;
+  background: black;
   border: 0;
   color: white;
 }
@@ -220,7 +220,7 @@ audio {
 }
 
 .comment-form input[type="submit"], .show-hide {
-  background: #333;
+  background: black;
   border: 0;
   color: white;
 }
