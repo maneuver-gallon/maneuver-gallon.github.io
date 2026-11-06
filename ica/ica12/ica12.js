@@ -11,17 +11,19 @@ function getQuote(){
     rand.send();
 }
 
-function displayQuote(quote){
+function displayQuote(q){
     let quoteText = document.getElementById("js-quote-text");
-    quoteText.innerHTML = quote;
+    quoteText.innerHTML = q;
 }
 
 function responseReceivedHandler() {
    if (this.status === 200) {
-    console.log(this.response);
-    displayQuote(this.response.question);
+    let quote = this.response.question;
+    console.log(this.response.question);
+    displayQuote(quote);
    }
    else {
     console.log("error");
+    alert("error");
    }
 }
