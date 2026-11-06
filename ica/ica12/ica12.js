@@ -3,6 +3,7 @@ let newQuote = document.querySelector(".new-quote");
 newQuote.addEventListener("click", getQuote);
 let rand = new XMLHttpRequest();
 rand.addEventListener("load", responseReceivedHandler);
+rand.responseType = "json";
 
 
 function getQuote(){
