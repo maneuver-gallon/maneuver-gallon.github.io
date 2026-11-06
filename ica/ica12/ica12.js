@@ -10,9 +10,15 @@ function getQuote(){
     rand.send();
 }
 
+function displayQuote(quote){
+    let quoteText = document.getElementById("js-quote-text");
+    quoteText.innerHTML = quote;
+}
+
 function responseReceivedHandler() {
    if (this.status === 200) {
     console.log(this.response);
+    displayQuote(this.response.question);
    }
    else {
     console.log("error");
